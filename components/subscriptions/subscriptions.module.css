@@ -1,0 +1,54 @@
+.subscriptions {
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.subscriptions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscription-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.card button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card button:hover {
+    background-color: #e68a00;
+}

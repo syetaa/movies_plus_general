@@ -1,0 +1,72 @@
+.profileContainer {
+    padding: 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.profileTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profilesList {
+    display: flex;
+    gap: 20px;
+}
+
+.profileCard,
+.addProfileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.profileCard {
+    background-color: #222;
+}
+
+.addProfileCard {
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+.profileAvatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #555;
+    margin-bottom: 10px;
+}
+
+.profileName {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profileDescription {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.editProfileLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.addProfileIcon {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.addProfileText {
+    font-size: 14px;
+    color: #fff;
+}
