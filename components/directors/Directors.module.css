@@ -1,0 +1,68 @@
+/* page.module.css */
+
+.directors {
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #121212; /* Фон секции */
+    color: #fff;
+}
+
+.directors h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.directors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 20px;
+}
+
+.director {
+    border: 2px solid transparent; /* Изначально без рамки */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.director:hover,
+.director:focus {
+    border-color: #007bff; /* Цвет рамки при наведении */
+}
+
+.director img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.director button {
+    background-color: #ff9900; /* Orange button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.director button:hover {
+    background-color: #e68a00; /* Darker orange */
+}
+
+/* Медиа запросы для адаптивности (по желанию) */
+@media (max-width: 768px) {
+    .directors-grid {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки на маленьких экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .directors-grid {
+        grid-template-columns: 1fr; /* Одна колонка на самых маленьких экранах */
+    }
+}
