@@ -1,10 +1,3 @@
-.text_fav {
-    font-size: 29px;
-    font-weight: 700;
-    color: var(--text-color1);
-
-}
-
 .movieSlider {
     display: flex;
     flex-direction: row;
@@ -25,12 +18,20 @@
 }
 
 .sliderItem img {
-    width: 100%;
-    height: 40vh;
     object-fit: cover;
     border-radius: 10px;
     user-select: none;
     pointer-events: none;
+}
+
+.large .sliderItem img {
+    width: 100%;
+    height: 40vh;
+}
+
+.small .sliderItem img {
+    width: 100%;
+    height: 30vh;
 }
 
 .sliderItem h4 {
