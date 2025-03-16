@@ -1,5 +1,5 @@
 .subscriptions {
-    padding: 20px;
+    padding: 27px 45px;
     font-family: sans-serif;
     background-color: #121212;
     color: #fff;
@@ -12,9 +12,9 @@
 
 .subscription-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
@@ -37,7 +37,7 @@
 }
 
 .card button {
-    background-color: #ff9900;
+    background: var(--btn-gradient-background);
     color: white;
     border: none;
     padding: 10px 15px;

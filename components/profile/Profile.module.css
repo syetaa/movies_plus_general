@@ -1,10 +1,11 @@
 .profileContainer {
-    padding: 20px;
+    padding: 27px 45px;
     background-color: #121212;
     color: #fff;
 }
 
 .profileTitle {
+    padding: 0 15px;
     font-size: 24px;
     margin-bottom: 20px;
 }

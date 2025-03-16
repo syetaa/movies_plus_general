@@ -4,7 +4,7 @@ export default function Directors() {
     return (
         <div className={styles.directors}>
             <h2>Режиссеры</h2>
-            <div className={styles['directors-grid']}>
+            <div className={styles['directors-grid']} style={{padding: 21}}>
                 <div className={styles.director}>
                     <img src="/director1.jpg" alt="Режиссер 1" />
                     <button>Смотреть</button>
@@ -14,19 +14,19 @@ export default function Directors() {
                     <button>Смотреть</button>
                 </div>
                 <div className={styles.director}>
-                    <img src="/director3.jpg" alt="Режиссер 3" />
+                    <img src="/director1.jpg" alt="Режиссер 3" />
                     <button>Смотреть</button>
                 </div>
                 <div className={styles.director}>
-                    <img src="/director4.jpg" alt="Режиссер 4" />
+                    <img src="/director2.jpg" alt="Режиссер 4" />
                     <button>Смотреть</button>
                 </div>
                 <div className={styles.director}>
-                    <img src="/director5.jpg" alt="Режиссер 5" />
+                    <img src="/director1.jpg" alt="Режиссер 5" />
                     <button>Смотреть</button>
                 </div>
                 <div className={styles.director}>
-                    <img src="/director6.jpg" alt="Режиссер 6" />
+                    <img src="/director2.jpg" alt="Режиссер 6" />
                     <button>Смотреть</button>
                 </div>
             </div>

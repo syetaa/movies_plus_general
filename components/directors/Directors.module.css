@@ -1,9 +1,9 @@
 /* page.module.css */
 
 .directors {
-    padding: 20px;
+    padding: 27px 45px;
     font-family: sans-serif;
-    background-color: #121212; /* Фон секции */
+    background-color: #131314; /* Фон секции */
     color: #fff;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .director button {
-    background-color: #ff9900; /* Orange button */
+    background: var(--btn-gradient-background);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -48,10 +48,6 @@
     transition: background-color 0.3s ease;
     width: 100%;
     box-sizing: border-box;
-}
-
-.director button:hover {
-    background-color: #e68a00; /* Darker orange */
 }
 
 /* Медиа запросы для адаптивности (по желанию) */

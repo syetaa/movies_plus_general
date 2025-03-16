@@ -4,7 +4,7 @@ export default function Subscriptions() {
     return (
         <div className={styles.subscriptions}>
             <h2>Подписки</h2>
-            <div className={styles['subscription-cards']}>
+            <div className={styles['subscription-cards']} style={{padding: 21}}>
                 <div className={styles.card}>
                     <h3>Всё в одном</h3>
                     <p>244 ТВ-канала</p>

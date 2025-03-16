@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     padding: 22px 50px;
     background: var(--background_1);
     color: var(--nav-text-color);
@@ -11,10 +10,8 @@
 
 .logo {
     text-transform: uppercase;
-
     font-size: 28px;
     font-weight: 700;
-
 }
 
 .nav_links {
@@ -35,8 +32,43 @@
     -webkit-text-fill-color: transparent;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.search button {
+    background: var(--btn-gradient-background);
+    color: var(--text-color1);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search button:hover {
+    background-color:  --btn-gradient-background;
+}
+
 
 .log_cont {
     font-size: 16px;
     font-weight: 600;
+}
+
+.log_cont a {
+    margin: 0 5px; /* добавляем отступы между ссылками */
+}
+
+.log_cont a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
 }

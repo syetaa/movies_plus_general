@@ -4,7 +4,7 @@ export default function Profile() {
   return (
     <div className={styles.profileContainer}>
       <h1 className={styles.profileTitle}>Профиль</h1>
-      <div className={styles.profilesList}>
+      <div className={styles.profilesList} style={{padding: 21}}>
         <ProfileCard
           name="Основной"
           description="Вз | Основной"
