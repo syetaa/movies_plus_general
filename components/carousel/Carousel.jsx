@@ -20,9 +20,9 @@ const Slider = ({ movies, size = "large" }) => {
 
     const movieItems = movies.map((movie) => (
         <div key={movie.imdbID} className={styles.sliderItem}>
-            <img src={movie.Poster || '/default-image.jpg'} alt={movie.Title} />
-            <h4>{movie.Title}</h4>
-            <h4>{movie.Year}</h4>
+            <img src={movie.poster_url || '/default-image.jpg'} alt={movie.Title} />
+            <h4>{movie.title}</h4>
+            <h4>{movie.year}</h4>
         </div>
     ));
 
