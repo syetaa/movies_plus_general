@@ -1,0 +1,240 @@
+/* MovieDetails.module.css */
+
+.container {
+    background-color: #111;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .movieInfo {
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+.posterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+}
+
+.details {
+    flex: 1;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.ratingStar {
+    color: gold;
+    margin-right: 8px;
+}
+
+.ratingText {
+    color: #aaa;
+}
+
+.infoList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.infoList li {
+    margin-bottom: 8px;
+    color: #aaa;
+}
+
+.descriptionTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.descriptionText {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.favoriteButton {
+    background: var(--btn-gradient-background);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.favoriteButton[disabled] {
+    background-color: #2ecc71;
+    cursor: not-allowed;
+}
+
+/* Стили для рейтинга звёздами */
+.starRatingContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    z-index: 10;
+    display: none;
+}
+
+.rating:hover .starRatingContainer {
+    display: flex;
+}
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.star.hovered {
+    color: gold;
+}
+
+.star.active {
+    color: gold;
+}
+
+.videoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+    .videoSection {
+        flex-direction: row;
+    }
+}
+
+.videoPlayer {
+    flex: 1;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.videoPlaceholder {
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    aspect-ratio: 16 / 9;
+}
+
+.videoPlayButton {
+    color: #e74c3c;
+    font-size: 3rem;
+}
+
+.voiceOver {
+    width: 100%;
+    max-width: 300px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    cursor: pointer;
+}
+
+.voiceOverTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.voiceOverText {
+    color: #ddd;
+}
+
+.voiceOverButton {
+    background-color: #444;
+    color: #ddd;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 8px;
+}
+
+.voiceOverButton:hover {
+    background-color: #555;
+}
+
+.commentSection {
+    margin-top: 32px;
+}
+
+.commentTextArea {
+    width: 100%;
+    background-color: #222;
+    color: #ddd;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+.commentSubmitButton {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.commentSubmitButton:hover {
+    background-color: #2980b9;
+}
