@@ -1,54 +1,44 @@
 "use client";
+import Link from "next/link";
+import styles from "./Header.module.css";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { getProfile, onLogout } from "@/api/auth/auth";
 
-import Link from 'next/link';
-import styles from './Header.module.css';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-
-export default function Header({ searchParams }) {
+export default function Header() {
     const [user, setUser] = useState(null);
-    const searchQuery = searchParams?.search || '';
     const router = useRouter();
 
     useEffect(() => {
-        // Check for user data in localStorage
-        const storedUser = localStorage.getItem('user');
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-        }
+        const fetchUser = async () => {
+            const profile = await getProfile();
+            setUser(profile);
+        };
+        fetchUser();
     }, []);
 
     const handleLogout = () => {
-        // Remove user data from localStorage
-        localStorage.removeItem('user');
+        onLogout();
         setUser(null);
-        router.push('/');
+        router.push("/");
     };
 
     return (
         <div className={styles.cont_main}>
-            <div className={styles.logo}>
-                Кино+
-            </div>
+            <div className={styles.logo}>Кино+</div>
             <div className={styles.nav_links}>
                 <Link href="/">Главная</Link>
                 <Link href="/favorites">Избранное</Link>
                 <Link href="/subscriptions">Подписки</Link>
+                {user ? <Link href="/profile">Профиль</Link> : null}
             </div>
             <form className={styles.search}>
-                <input
-                    type="text"
-                    defaultValue={searchQuery}
-                    placeholder="Поиск..."
-                    name="search"
-                />
+                <input type="text" placeholder="Поиск..." name="search" />
                 <button type="submit">Найти</button>
             </form>
             <div className={styles.log_cont}>
                 {user ? (
                     <>
-                        <span>Привет, {user.username}</span>
-                        <Link href="/profile">Профиль</Link>
                         <button onClick={handleLogout}>Выйти</button>
                     </>
                 ) : (
