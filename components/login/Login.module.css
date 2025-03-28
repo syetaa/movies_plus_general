@@ -1,0 +1,72 @@
+/* Login.module.css */
+
+.textmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+    color: #fff;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cont1 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cont2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inp1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #333;
+}
+
+.inp1 svg {
+    margin-right: 8px;
+    color: #aaa;
+}
+
+.inp1 input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 1rem;
+    color: #ddd;
+    background-color: transparent;
+}
+
+.btn {
+    background: var(--btn-gradient-background);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
