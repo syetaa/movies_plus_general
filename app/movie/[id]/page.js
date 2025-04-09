@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import MovieDetails from "@/components/movie_details/Movie_details";
-import { getMovieDetails } from "@/api/movies/movies";
+import { fetchMovieDetails } from "@/api/movies/movies";
 import { useParams } from "next/navigation";
 
 const MoviePage = () => {
@@ -13,7 +13,7 @@ const MoviePage = () => {
     useEffect(() => {
         const fetchMovie = async () => {
             try {
-                const movieData = await getMovieDetails(id);
+                const movieData = await fetchMovieDetails(id);
                 if (!movieData) {
                     throw new Error("Ошибка при загрузке данных фильма");
                 }

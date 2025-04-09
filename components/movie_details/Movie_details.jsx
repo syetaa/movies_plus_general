@@ -70,7 +70,7 @@ const MovieDetails = ({ movie }) => {
                             disabled={isFavorite}
                             style={{ backgroundColor: isFavorite ? '#2ecc71' : '#e67e22' }}
                         >
-                            {isFavorite ? 'Добавлено в избранное' : 'Добавить в избранное'}
+                            {isFavorite ? 'Удалить из избранного' : 'Добавить в избранное'}
                         </button>
                     </div>
                     <div className={styles.details}>

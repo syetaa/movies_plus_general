@@ -37,7 +37,6 @@ export default function LoginComponent() {
                             required
                         />
                     </div>
-
                     <div className={styles.inp1}>
                         <RiLockPasswordFill size={20} />
                         <input
@@ -48,7 +47,6 @@ export default function LoginComponent() {
                             required
                         />
                     </div>
-
                     <button className={styles.btn} type="submit" onClick={handleSignIn}>
                         Войти
                     </button>

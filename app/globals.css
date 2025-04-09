@@ -9,11 +9,13 @@
     --background_1: #111112;
     --background_2: #0F0F10;
     --card_background: #131314;
+    --input_background: #333;
 
     --text-color1: #fefefe;
     --nav-text-color: #EFEFEF;
 
     --btn-gradient-background: linear-gradient(42deg, rgba(255, 149, 50, 1) 0%, rgba(255, 90, 36, 1) 100%);
+    --card_shadow: rgba(0, 0, 0, 0.25);
 }
 
 html {

@@ -101,7 +101,7 @@ export const onLogout = () => {
 };
 
 // Получение данных о пользователе
-export const getProfile = async () => {
+export const fetchProfile = async () => {
     try {
         return await apiRequest("/auth/me", "GET", null, true);
     } catch (error) {

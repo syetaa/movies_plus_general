@@ -10,11 +10,12 @@
     flex-direction: column;
     gap: 8px;
     padding: 21px;
-    margin: 0 15px;
+    margin: 5px 15px;
     background: var(--card_background);
     border-radius: 14px;
     user-select: none;
     overflow: hidden;
+    box-shadow: 2px 2px 7px 1px var(--card_shadow);
 }
 
 .sliderItem img {

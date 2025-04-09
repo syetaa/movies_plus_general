@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { getProfile, onLogout } from "@/api/auth/auth";
+import { fetchProfile, onLogout } from "@/api/auth/auth";
 
 export default function Header() {
     const [user, setUser] = useState(null);
@@ -11,7 +11,7 @@ export default function Header() {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const profile = await getProfile();
+            const profile = await fetchProfile();
             setUser(profile);
         };
         fetchUser();

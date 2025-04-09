@@ -4,7 +4,7 @@ const port = process.env.NEXT_PUBLIC_BACKEND_PORT || "8000";
 const BASE_URL = `${protocol}://${host}:${port}`;
 
 // Получение популярных фильмов
-const getTrendingMovies = async () => {
+const fetchTrendingMovies = async () => {
     try {
         const response = await fetch(`${BASE_URL}/movies/popular`);
         if (!response.ok) {
@@ -19,7 +19,7 @@ const getTrendingMovies = async () => {
 };
 
 // Получение избранных фильмов
-const getFavoriteMovies = async () => {
+const fetchFavoriteMovies = async () => {
     try {
         const response = await fetch(`${BASE_URL}/movies/favorite`);
         if (!response.ok) {
@@ -63,7 +63,7 @@ const addFavoriteMovie = async (movie) => {
 };
 
 // Получение информации о фильме по ID
-const getMovieDetails = async (id) => {
+const fetchMovieDetails = async (id) => {
     try {
         const response = await fetch(`${BASE_URL}/movies/${id}`);
         if (!response.ok) {
@@ -77,4 +77,4 @@ const getMovieDetails = async (id) => {
     }
 };
 
-export { getTrendingMovies, getFavoriteMovies, addFavoriteMovie, getMovieDetails };
+export { fetchTrendingMovies, fetchFavoriteMovies, addFavoriteMovie, fetchMovieDetails };
