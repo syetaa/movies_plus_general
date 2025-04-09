@@ -1,0 +1,66 @@
+.textmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background_2);
+    color: var(--text-color1);
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--card_background);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--card_shadow);
+    overflow: hidden;
+}
+
+.cont1 {
+    background: var(--card_background);
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cont2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.inp1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px;
+    background: var(--input_background);
+}
+
+.inp1 svg {
+    margin-right: 8px;
+}
+
+.inp1 input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.btn {
+    background: var(--btn-gradient-background);
+    color: var(--text-color1);
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

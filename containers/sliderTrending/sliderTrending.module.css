@@ -1,0 +1,14 @@
+.textmain {
+    padding: 27px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: var(--background_1);
+}
+
+.text1 {
+    padding: 0 15px;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-color1);
+}
